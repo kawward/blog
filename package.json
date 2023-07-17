@@ -1,11 +1,11 @@
 {
-  "name": "simple login system",
+  "name": "simple Blog",
   "version": "1.0.0",
   "description": "Login system Using Nodejs, passportjs, mongodb and mongoose",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
+    "start": "npm start server.js",
     "start-server": "node server.js"
   },
   "author": "MOOHAMED BELLA",
