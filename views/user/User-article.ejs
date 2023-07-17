@@ -1,0 +1,51 @@
+<%- include('../includes/header') %>
+     <%- include('../includes/nav') %>
+          <main class="page_content">
+               <section class="blog_section section_space_lg">
+                    <div class="container">
+                         <div class="row">
+                              <div class="col col-lg-10">
+                                   <div class="row">
+                                        <div class="col col-lg-12">
+                                             <!-- <div class="details_image"><img src="assets/images/blog/blog_details_image_1.jpg" alt="Collab – Online Learning Platform"></div> -->
+                                             <div class="details_content">
+                                                  <% articles.forEach(article => {  %>
+                                       
+                                   
+                                                       <div class="blog_item">
+                                                           <ul class="item_category_list unordered_list">
+                                                               <li><a href="#!"> <%= article.category %></a></li>
+                                                           </ul>
+                                                           <!-- <div class="item_image"><a href="blog_details.html" data-cursor-text="View"><img
+                                                                       src="assets/images/blog/blog_img_4.jpg"
+                                                                       alt="Collab – Online Learning Platform"></a></div> -->
+                                                           <div class="item_content">
+                                                               <ul class="meta_info_list unordered_list">
+                                                                   <!-- <li><a href="#!"><i class="fas fa-thumbtack"></i> <span>Sticky
+                                                                               Post</span></a></li> -->
+                                                                   <li><a href="#!"><i class="fas fa-user"></i> <span>by  <%= article.author %></span></a>
+                                                                   </li>
+                                                                   <!-- <li><a href="#!"><i class="fas fa-calendar-day"></i> <span> <%= article.createAt %></span></a></li> -->
+                                                               </ul>
+                                                               <h2 class="item_title"><a href="article/<%= article._id %>"> <%= article.title %></a></h2>
+                                                               <form action="/user/article/delete/" method="post">
+                                                                 <input type="text" value="<%= article._id %>"  name="postID" hidden>
+                                                                 <button type="submit" class="btn btn-danger">Delete </button>
+                                                               </form>
+                                                           </div>
+                                                       </div>
+                                                       <% }) %>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!--  -->
+                              </div>
+
+                         </div>
+                    </div>
+               </section>
+          </main>
+          </body>
+
+          </html>

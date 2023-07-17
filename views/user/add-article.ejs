@@ -1,0 +1,43 @@
+<%- include('../includes/header') %>
+<%- include('../includes/nav') %>
+<main class="page_content">
+     <div class="container">
+          <form action="/user/new" method="post">
+               <h1 class="form_title">What's is Your Mind 🤔</h1> <br>
+               <div class="form_item">
+                   <label for="input_name" class="input_title text-uppercase">Title</label>
+                   <input id="input_name" type="text" name="title" placeholder="A Title For Ur Amazing Article">
+               </div>
+               <div class="form_item">
+                   <label for="input_email" class="input_title text-uppercase">description</label>
+                   <input id="input_email" type="text" name="description" placeholder="Give A description For it">
+               </div>
+               <div class="form_item">
+                    <label for="category" class="input_title text-uppercase">Category</label>
+                    <select name="category" id="category">
+                         <option value="">Health</option>
+                         <option value="">Societe</option>
+                         <option value="">Technologie</option>
+                         <option value="">Learning</option>
+                    </select>
+                </div>
+               <div class="form_item">
+                   <label for="body" class="input_title text-uppercase">And Finaly The Content</label>
+                   <textarea id="body" name="body" placeholder="Your Article Conent "></textarea>
+               </div>
+               <button type="submit" class="btn btn_dark mb-10">
+                   <span>
+                       <small>Post it </small>
+                       <small>With World</small>
+                   </span>
+               </button>
+               <br><br>
+           </form>
+     </div>
+</main>
+<script>
+     Jodit.make('#body', {
+    height: 400,
+    language: 'ar'
+  });
+</script>

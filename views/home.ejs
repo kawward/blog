@@ -1,0 +1,88 @@
+<%- include('./includes/header') %>
+    <%- include('./includes/nav') %>
+        <main class="page_content">
+            <section class="page_banner">
+                <div class="container">
+                    <div class="content_wrapper" style="background-image:url(/images/page_banner_image.png)">
+                        <div class="row align-items-center">
+                            <div class="col col-lg-6">
+                               
+                                <h1 class="page_title">Articles</h1>
+                                <p class="page_description">Egestas sed tempus urna et pharetra. Leo integer malesuada
+                                    nunc vel. Libero id faucibus nisl tincidunt eget nullam non nisi. Faucibus turpis in
+                                    eu mi bibendum neque egestas</p>
+                                <form action="#">
+                                    <div class="form_item mb-0"><input type="search" name="search"
+                                            placeholder="What do you want to learn ?"> <button type="submit"
+                                            class="btn btn_dark"><span><small>Search</small>
+                                                <small>Search</small></span></button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog_section section_space_lg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-8">
+                            <div class="row">
+                                <div class="col col-lg-12">
+                                    <!-- Start Of Artile card -->
+                                    <% articles.forEach(article => {  %>
+                                       
+                                   
+                                    <div class="blog_item">
+                                        <ul class="item_category_list unordered_list">
+                                            <li><a href="#!"> <%= article.category %></a></li>
+                                        </ul>
+                                        <!-- <div class="item_image"><a href="blog_details.html" data-cursor-text="View"><img
+                                                    src="assets/images/blog/blog_img_4.jpg"
+                                                    alt="Collab – Online Learning Platform"></a></div> -->
+                                        <div class="item_content">
+                                            <ul class="meta_info_list unordered_list">
+                                                <!-- <li><a href="#!"><i class="fas fa-thumbtack"></i> <span>Sticky
+                                                            Post</span></a></li> -->
+                                                <li><span><i class="fas fa-user"></i> <span>by  <%= article.author %></span></span>
+                                                </li>
+                                                <!-- <li><a href="#!"><i class="fas fa-calendar-day"></i> <span> <%= article.createAt %></span></a></li> -->
+                                            </ul>
+                                            <h2 class="item_title"><a href="article/<%= article._id %>"> <%= article.title %></a></h2><a class="btn_unfill"
+                                                href="article/<%= article._id %>"><span class="btn_text">Read Articles</span>
+                                                <span class="btn_icon"><i class="">></i> <i
+                                                        class=""> > </i></span></a>
+                                        </div>
+                                    </div>
+                                    <% }) %>
+                                </div>
+                            </div>
+
+                            <!--  -->
+                        </div>
+                        <!-- <div class="col col-lg-4">
+                            <aside class="sidebar ps-lg-4">
+                                <div class="widget">
+                                    <div class="widget_title" role="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse_category" aria-expanded="true"
+                                        aria-controls="collapse_category">Category</div>
+                                    <div class="collapse show" id="collapse_category">
+                                        <div class="card card-body">
+                                            <ul>
+                                                <li><a href="#">programmation</a></li>
+                                                <li><a href="#">programmation</a></li>
+                                                <li><a href="#">programmation</a></li>
+                                                <li><a href="#">programmation</a></li>
+                                                <li><a href="#">programmation</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        </body>
+
+        </html>
