@@ -5,5 +5,5 @@ var mongoDB = 'mongodb+srv://mohamedbella:mohamedbella@blog.l8fcx9z.mongodb.net/
 mongoose.connect(mongoDB, { useNewUrlParser: true,useUnifiedTopology: true })
 .then(() => {
      console.log('DATAbase connected successfuly')
-     app.listen(3001)
+     app.listen(process.env.PORT)
 }) 
