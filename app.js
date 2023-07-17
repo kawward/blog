@@ -6,6 +6,7 @@ const User                = require('./models/userModel')
 const PublicRoutes        = require('./routes/publicRoutes')
 const userRoutes          = require('./routes/userRoutes')
 const session             = require('express-session')
+const MongoStore          = require('connect-mongo')(session);
 const flash               = require('express-flash')
 const bcrypt              = require('bcrypt') 
 const app                 = express()
@@ -25,7 +26,8 @@ app.use(flash())
 app.use(session({
      secret : 'thi64387643876324g348243',
      resave : false,
-     saveUninitialized : false
+     saveUninitialized : false,
+     store: new MongoStore(options)
 }))
 
 const isUserAuthenticate = (req,res,next) => {
