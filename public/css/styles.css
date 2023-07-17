@@ -1,0 +1,114 @@
+body {
+     background-color: #d9d9d9
+ }
+ .jodit-toolbar__box:not(:empty):not(:empty) {
+    background-color: #d6ffe0;
+}
+.page_banner .content_wrapper {
+    display: flex;
+    min-height: 520px;
+    align-items: center;
+    padding: 70px 115px;
+    background-size: 571px;
+    background-repeat: no-repeat;
+    background-color: #c74ffb4a;
+    background-position: right bottom;
+}
+.site_header{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 15px 0;
+    position: absolute;
+    transition: padding .3s;
+}
+ /* * {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ 
+ 
+ .navbar {
+     background-color: black;
+     display: flex;
+     font-family: sans-serif;
+     justify-content: space-between;
+     margin-bottom: 17px;
+     padding: 11px 15px;
+ }
+ 
+ .navbar .brand {
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .navbar ul {
+     display: inherit;
+ }
+ 
+ .navbar ul li {
+     list-style: none;
+     padding-left: 12px;
+ }
+ 
+ .navbar ul li a {
+     color: grey;
+     text-decoration: none;
+ }
+
+ .container {
+     background: #101010;
+    margin: 50px auto;
+    max-width: 660px;
+    border-radius: 6px;
+    padding: 20px 10px;
+ }
+ .error{
+    font-size: x-small;
+    margin: 10px 1px;
+    background-color: #590000;
+    padding: 10px 20px;
+    border-radius: 3px;
+ }
+ 
+
+ form {
+     border: 1px solid transparent;
+     max-width: 277px;
+     margin: 50px auto;
+     padding: 22px;
+     border-radius: 3px;
+     background-color: black;
+ }
+
+form h2 {
+     margin-bottom: 20px;
+     color: white;
+}
+ 
+ form div label {
+     display: block;
+ }
+ 
+ form input {
+     border: 1px solid transparent;
+     padding: 4px 10px;
+     margin-bottom: 15px;
+     margin-top: 3px;
+     color: black;
+     border-radius: 50px;
+     width: -webkit-fill-available;
+     background-color: #8b8b8b;
+}
+form button {
+     color: black;
+     border: 1px solid transparent;
+     font-weight: bolder;
+     padding: 5px 16px;
+     border-radius: 50px;
+     background-color: darkolivegreen;
+     cursor: pointer;
+}
+  */
