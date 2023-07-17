@@ -1,17 +1,17 @@
 {
-  "name": "simple Blog",
+  "name": "simple login system",
   "version": "1.0.0",
   "description": "Login system Using Nodejs, passportjs, mongodb and mongoose",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm start server.js",
+    "start": "node server.js",
+    "start-server": "node server.js"
   },
   "author": "MOOHAMED BELLA",
   "license": "ISC",
   "devDependencies": {
     "dotenv": "^16.3.1",
-    "nodemon": "^1.19.4"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
